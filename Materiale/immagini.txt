@@ -1,0 +1,7 @@
+latex:
+![image](stat1.png)
+![image](confrontoValori.png)
+
+html:
+![stat1.png](attachment:stat1.png)
+![confrontoValori.png](attachment:confrontoValori.png)

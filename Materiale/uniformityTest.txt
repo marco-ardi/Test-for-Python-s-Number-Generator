@@ -1,0 +1,18 @@
+import scipy.stats as ss
+import numpy as np
+#generiamo i numeri random
+#ricordiamo che per valere il numero di campioni deve essere almeno 5,
+#per avere un buon test ne scegliamo 1000
+A = np.random.randint(0, 10, 1000)
+#selezioniamo la probabilità di errore tollerata alpha
+alpha = 0.05
+#generiamo la tabella delle frequenze attese
+freq = (A==np.arange(10)[..., np.newaxis]).sum(axis=1)*1./A.size
+#test del chi quadro
+W, p_value = ss.chisquare(freq)
+print("W=",W,"p-value=", p_value)
+if(p_value > alpha):
+    print("La distribuzione è uniforme con prob err", alpha)
+else:
+    print("la distribuzione non è uniforme con prob err", alpha)
+printValori(A)
