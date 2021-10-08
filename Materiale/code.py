@@ -61,7 +61,7 @@ displayChi(df=99, alpha=0.05, p=p_value)
 
 def updowntest(l, l_median, alpha=0.05):
     runs, n1, n2 = 0, 0, 0
-    for i in range(len(l)):
+    for i, item in enumerate(l):
         if( (l[i] >= l_median and l[i-1] < l_median) or (l[i] < l_median and l[i-1] >= l_median )):
             runs+=1
         if(l[i] >= l_median):
