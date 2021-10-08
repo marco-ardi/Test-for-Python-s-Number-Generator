@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/marco-ardi/test-for-python-s-number-generator/badge)](https://www.codefactor.io/repository/github/marco-ardi/test-for-python-s-number-generator)
 # Test for Python's Number Generator
 ## Overview
 Project for Statistics's exam @ University of Catania.
